@@ -14,5 +14,21 @@ Endpoints for viewing, manipulating and creating accounts that users have access
 * [Check email availability](account/create_available.md) : `POST /account/create/available`
 * [Modify account password](account/modify_password.md) : `POST /account/modify/password`
 * [Verify account token validity](account/token.md) : `POST /token/verify`
-* [Promote account](account/promote.md) : `POST /admin/account/promote`
+* [Promote account (as Admin)](account/promote.md) : `POST /admin/account/promote`
 * [Account information (as device)](account/device_info.md) : `POST /device/account/info`
+
+### Circle related
+
+Endpoints for viewing, manipulating and creating circles that users have access to.
+
+* [Invite user to circle](circle/invite.md): `POST /circle/invite`
+* [Join a circle](circle/join.md): `POST /circle/join`
+* [Reject cirle invitation](circle/reject.md): `POST /circle/reject`
+* [Quit circle](circle/quit.md): `POST /circle/quit`
+* [Kick user from circle](circle/kick.md): `POST /circle/kick`
+* [Create circle](circle/create.md): `POST /circle/create`
+* [Update cirle](circle/update.md): `POST /circle/update`
+* [Delete circle (as Admin)](circle/delete.md): `POST /admin/circle/delete`
+* [Circle informations](circle/info.md): `POST /circle/info`
+* [List circles](circle/list.md): `POST /circle/list`
+* [Circle informations (as Device)](circle/device_info.md): `POST /device/circle/info`
