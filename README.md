@@ -15,4 +15,4 @@ Endpoints for viewing, manipulating and creating accounts that users have access
 * [Modify account password](account/modify_password.md) : `POST /account/modify/password`
 * [Verify account token validity](account/token.md) : `POST /token/verify`
 * [Promote account](account/promote.md) : `POST /admin/account/promote`
-* [Account information (if device)](account/device_info.md) : `POST /device/account/info`
+* [Account information (as device)](account/device_info.md) : `POST /device/account/info`
