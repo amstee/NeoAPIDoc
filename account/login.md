@@ -1,6 +1,6 @@
 # Create User's Account
 
-Log in accoun (receiving JWT token).
+Log in account (receiving JWT token).
 
 **URL** : `/account/login`
 
