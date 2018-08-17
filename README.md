@@ -4,7 +4,7 @@ This is the api documentation which will detail the available route, how to acce
 
 ### Account related
 
-Endpoints for viewing, manipulating and creating accounts that users have access to.
+Endpoints for viewing, manipulating and creating accounts.
 
 * [Create account](account/create.md) : `POST /account/create`
 * [Log in account](account/login.md) : `POST /account/login`
@@ -19,7 +19,7 @@ Endpoints for viewing, manipulating and creating accounts that users have access
 
 ### Circle related
 
-Endpoints for viewing, manipulating and creating circles that users have access to.
+Endpoints for viewing, manipulating and creating circles.
 
 * [Invite user to circle](circle/invite.md): `POST /circle/invite`
 * [Join a circle](circle/join.md): `POST /circle/join`
