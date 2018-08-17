@@ -32,7 +32,7 @@ Informations to provide :
     "success": True
 }
 ```
-* [#1_details](./info.md)
+* [#1_details](./info.md#success-response)
 
 ## Error Responses
 
