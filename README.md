@@ -15,7 +15,7 @@ Endpoints for viewing, manipulating and creating accounts.
 * [Modify account password](account/modify_password.md) : `POST /account/modify/password`
 * [Verify account token validity](account/token.md) : `POST /token/verify`
 * [Promote account (as Admin)](account/promote.md) : `POST /admin/account/promote`
-* [Account information (as device)](account/device_info.md) : `POST /device/account/info`
+* [Account information (as Device)](account/device_info.md) : `POST /device/account/info`
 
 ### Circle related
 
@@ -32,3 +32,21 @@ Endpoints for viewing, manipulating and creating circles.
 * [Circle informations](circle/info.md): `POST /circle/info`
 * [List circles](circle/list.md): `POST /circle/list`
 * [Circle informations (as Device)](circle/device_info.md): `POST /device/circle/info`
+
+### Conversation related
+
+Endpoint for viewing, manipulating and creating conversations.
+
+* [Create conversation (as Admin)](conversation/create.md): `POST /admin/conversation/create`
+* [Delete conversation (as Admin)](conversation/delete.md): `POST /admin/conversation/delete`
+* [Conversation informations (as Device)](conversation/device_info.md): `POST /device/conversation/info`
+* [Conversation information](conversation/info): `POST /conversation/info`
+* [Update conversation informations](conversation/update.md): `POST /conversation/update`
+* [List conversation](conversation/list.md): `POST /conversation/list`
+* [List conversation (as Device)](conversation/device_list.md): `POST /device/conversation/list`
+* [Invite user to conversation](conversation/invite.md): `POST /conversation/invite`
+* [Kick user from conversation](conversation/kick.md): `POST /conversation/kick`
+* [Quit conversation](conversation/quit.md): `POST /conversation/quit`
+* [Remove device from conversation](conversation/remove.md): `POST /conversation/device/remove`
+* [Promote user in conversation](conversation/promote.md): `POST /conversation/promote`
+* [Add device in conversation](conversation/device_add.md): `POST /conversation/device/add`
