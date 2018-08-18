@@ -14,7 +14,8 @@ Informations to provide :
 ```json
 {
     "token": "[JWT token]",
-    "circle_id": "[integer]"
+    "circle_id": "[integer]",
+    "name": "[string(128)]"
 }
 ```
 
