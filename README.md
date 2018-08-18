@@ -50,3 +50,28 @@ Endpoint for viewing, manipulating and creating conversations.
 * [Remove device from conversation](conversation/remove.md): `POST /conversation/device/remove`
 * [Promote user in conversation](conversation/promote.md): `POST /conversation/promote`
 * [Add device in conversation](conversation/device_add.md): `POST /conversation/device/add`
+
+### Message related
+
+Endpoint for viewing, manipulating and creating messages.
+
+* [Create message (as Admin)](message/admin_create.md): `POST /admin/message/create`
+* [Delete message](message/delete.md): `POST /message/delete`
+* [Message informations](message/info.md): `POST /message/info`
+* [Update message](message/update.md): `POST /message/update`
+* [List messages in conversation](message/list.md): `POST /conversation/message/list`
+* [First message (as Device)](message/device_first_messsage.md): `POST /device/first-message`
+* [Send message (as Device)](message/device_send.md): `POST /device/message/send`
+* [Send first message](message/first_message.md): `POST /message/first-message`
+* [Send message](message/send.md): `POST /message/send`
+* [Send first message to device](message/message_device.md): `POST /device/message/send`
+
+### Device related
+
+Endpoint used by NEO device.
+
+* [Create message (as Admin)](device/admin_message_create.md): `POST /admin/device/message/create`
+* [Delete message](device/message_delete.md): `POST /device/message/delete`
+* [Message informations](device/message_info.md): `POST /device/message/info`
+* [List messages](device/message_list.md): `POST /device/message/list`
+* [Update message](device/message_update.md): `POST /device/message/update`
