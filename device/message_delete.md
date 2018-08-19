@@ -1,12 +1,12 @@
-# Update message
+# Delete message
 
-**URL** : `/message/update`
+**URL** : `/device/message/delete`
 
 **Method** : `POST`
 
 **Authentication required** : YES (JWT token)
 
-**Permissions required** : User
+**Permissions required** : Device
 
 
 Informations to provide :
@@ -14,8 +14,7 @@ Informations to provide :
 ```json
 {
     "token": "[JWT token]",
-    "message_id": "[integer]",
-    "text_content": "[string(8192)]"
+    "message_id": "[integer]"
 }
 ```
 
@@ -34,6 +33,21 @@ Informations to provide :
 ```
 
 ## Error Responses
+
+**Condition** : Cannot delete this message.
+
+**Code** : `403 FORBIDDEN`
+
+**Content example**
+
+```json
+{
+    "message": "[Error message]",
+    "success": False
+}
+```
+
+### OR
 
 **Condition** : Error occured.
 

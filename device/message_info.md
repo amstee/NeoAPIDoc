@@ -1,12 +1,12 @@
-# List messages
+# Message informations
 
-**URL** : `/message/list`
+**URL** : `/device/message/info`
 
 **Method** : `POST`
 
 **Authentication required** : YES (JWT token)
 
-**Permissions required** : User
+**Permissions required** : Device
 
 
 Informations to provide :
@@ -14,8 +14,7 @@ Informations to provide :
 ```json
 {
     "token": "[JWT token]",
-    "conversation_id": "[integer]",
-    "quantity": "[integer]"
+    "message_id": "[integer]"
 }
 ```
 
@@ -29,7 +28,7 @@ Informations to provide :
 
 ```json
 {
-    "content":  [{
+    "content":  {
                     "id": "[integer]",
                     "link": {
                                 "id": "[integer]",
@@ -46,7 +45,7 @@ Informations to provide :
                     "medias":   [
                                     media.get_content() for media in self.media_links
                                 ]
-                }],
+                },
     "success": True
 }
 ```

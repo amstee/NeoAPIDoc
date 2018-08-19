@@ -1,12 +1,12 @@
 # List messages
 
-**URL** : `/message/list`
+**URL** : `/device/message/list`
 
 **Method** : `POST`
 
 **Authentication required** : YES (JWT token)
 
-**Permissions required** : User
+**Permissions required** : Device
 
 
 Informations to provide :

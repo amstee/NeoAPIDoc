@@ -1,22 +1,21 @@
-# Create User's Account
+# Update message
 
-Log in account (receiving JWT token).
-
-**URL** : `/account/login`
+**URL** : `/device/message/update`
 
 **Method** : `POST`
 
-**Authentication required** : NO
+**Authentication required** : YES (JWT token)
 
-**Permissions required** : None
+**Permissions required** : device
 
 
 Informations to provide :
 
 ```json
 {
-    "email": "[string(120)]",
-    "password": "[string(50)]",
+    "token": "[JWT token]",
+    "message_id": "[integer]",
+    "text_content": "[string(8192)]"
 }
 ```
 
@@ -30,7 +29,6 @@ Informations to provide :
 
 ```json
 {
-    "token": "[JWT token]",
     "success": True
 }
 ```
@@ -39,7 +37,7 @@ Informations to provide :
 
 **Condition** : Error occured.
 
-**Code** : `403 FORBIDDEN`
+**Code** : `400 BAD REQUEST`
 
 **Content example**
 
