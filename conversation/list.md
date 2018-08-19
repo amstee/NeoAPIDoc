@@ -1,12 +1,12 @@
-# Delete cirle
+# List conversation
 
-**URL** : `/circle/delete`
+**URL** : `/conversation/kick`
 
 **Method** : `POST`
 
 **Authentication required** : YES (JWT token)
 
-**Permissions required** : Admin
+**Permissions required** : User
 
 
 Informations to provide :
@@ -28,28 +28,29 @@ Informations to provide :
 
 ```json
 {
-    "content": {
-                "id": "[integer]",
-                "name": "[string(120)]",
-                "created": "[datetime]",
-                "updated": "[datetime]",
-                "device": "[integer]",
-               },
+    "content":  {
+                    "id": "[integer]",
+                    "name": "[string(120)]",
+                    "created": "[datetime]",
+                    "updated": "[datetime]",
+                    "circle_id": "[integer]",
+                    "device_access": "[boolean]"
+                },
     "success": True
 }
 ```
 
 ## Error Responses
 
-**Condition** : Circle not found.
+**Condition** : No right in specified circle.
 
-**Code** : `404 NOT FOUND`
+**Code** : `403 FORBIDDEN`
 
 **Content example**
 
 ```json
 {
-    "message": "Le cercle est introuvable",
+    "message": "[Error message]",
     "success": False
 }
 ```

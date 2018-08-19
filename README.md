@@ -40,7 +40,7 @@ Endpoint for viewing, manipulating and creating conversations.
 * [Create conversation (as Admin)](conversation/create.md): `POST /admin/conversation/create`
 * [Delete conversation (as Admin)](conversation/delete.md): `POST /admin/conversation/delete`
 * [Conversation informations (as Device)](conversation/device_info.md): `POST /device/conversation/info`
-* [Conversation information](conversation/info): `POST /conversation/info`
+* [Conversation information](conversation/info.md): `POST /conversation/info`
 * [Update conversation informations](conversation/update.md): `POST /conversation/update`
 * [List conversation](conversation/list.md): `POST /conversation/list`
 * [List conversation (as Device)](conversation/device_list.md): `POST /device/conversation/list`
@@ -60,11 +60,11 @@ Endpoint for viewing, manipulating and creating messages.
 * [Message informations](message/info.md): `POST /message/info`
 * [Update message](message/update.md): `POST /message/update`
 * [List messages in conversation](message/list.md): `POST /conversation/message/list`
-* [First message (as Device)](message/device_first_messsage.md): `POST /device/first-message`
+* [First message (as Device)](message/device_first_messsage.md): `POST /device/message/first-message`
 * [Send message (as Device)](message/device_send.md): `POST /device/message/send`
 * [Send first message](message/first_message.md): `POST /message/first-message`
 * [Send message](message/send.md): `POST /message/send`
-* [Send first message to device](message/message_device.md): `POST /device/message/send`
+* [Send first message to device](message/first-message_to_device.md): `POST /message/device/first-message`
 
 ### Device related
 

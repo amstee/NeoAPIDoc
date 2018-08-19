@@ -1,6 +1,6 @@
-# Kick user from circle
+# Promote user in conversation
 
-**URL** : `/circle/kick`
+**URL** : `/conversation/promote`
 
 **Method** : `POST`
 
@@ -14,7 +14,7 @@ Informations to provide :
 ```json
 {
     "token": "[JWT token]",
-    "circle_id": "[integer]",
+    "conversation_id": "[integer]",
     "email": "[string(120)]"
 }
 ```
@@ -34,6 +34,21 @@ Informations to provide :
 ```
 
 ## Error Responses
+
+**Condition** : Insufficient right for request.
+
+**Code** : `403 FORBIDDEN`
+
+**Content example**
+
+```json
+{
+    "message": "[Error message]",
+    "success": False
+}
+```
+
+### OR
 
 **Condition** : Error occured.
 

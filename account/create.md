@@ -15,11 +15,11 @@ Informations to provide :
 
 ```json
 {
-    "email": "[unicode 128 chars max]",
-    "password": "[unicode 64 chars max]",
-    "first_name": "[unicode 64 chars max]",
-    "last_name": "[unicode 64 chars max]",
-    "birthday": "[datetime chars format]"
+    "email": "[string(120)]",
+    "password": "[string(50)]",
+    "first_name": "[string(50)]",
+    "last_name": "[string(50)]",
+    "birthday": "[string(datetime)]"
 }
 ```
 

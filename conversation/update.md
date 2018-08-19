@@ -1,6 +1,6 @@
-# Kick user from circle
+# Update conversation informations
 
-**URL** : `/circle/kick`
+**URL** : `/conversation/update`
 
 **Method** : `POST`
 
@@ -14,10 +14,13 @@ Informations to provide :
 ```json
 {
     "token": "[JWT token]",
-    "circle_id": "[integer]",
-    "email": "[string(120)]"
+    "conversation_id": "[integer]",
+    *"conversation_name": "[string(120)]",
+    *"device_access": "[boolean]"
 }
 ```
+
+* *Not mandatory
 
 ## Success Response
 

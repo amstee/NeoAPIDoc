@@ -1,12 +1,12 @@
-# Kick user from circle
+# Create conversation
 
-**URL** : `/circle/kick`
+**URL** : `/admin/conversation/create`
 
 **Method** : `POST`
 
 **Authentication required** : YES (JWT token)
 
-**Permissions required** : User
+**Permissions required** : Admin
 
 
 Informations to provide :
@@ -14,8 +14,8 @@ Informations to provide :
 ```json
 {
     "token": "[JWT token]",
-    "circle_id": "[integer]",
-    "email": "[string(120)]"
+    "conversation_name": "[string(120)]",
+    "circle_id": "[integer]"
 }
 ```
 

@@ -14,7 +14,7 @@ Informations to provide :
 ```json
 {
     "token": "[JWT token]",
-    "name": "[string(128)]"
+    "name": "[string(120)]"
 }
 ```
 
@@ -30,7 +30,7 @@ Informations to provide :
 {
     "content": {
                 "id": "[integer]",
-                "name": "[string(128)]",
+                "name": "[string(120)]",
                 "created": "[datetime]",
                 "updated": "[datetime]",
                 "device": "[integer]",

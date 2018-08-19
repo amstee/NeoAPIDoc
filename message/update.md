@@ -1,6 +1,6 @@
-# Kick user from circle
+# Create message (as Admin)
 
-**URL** : `/circle/kick`
+**URL** : `/message/update`
 
 **Method** : `POST`
 
@@ -14,8 +14,8 @@ Informations to provide :
 ```json
 {
     "token": "[JWT token]",
-    "circle_id": "[integer]",
-    "email": "[string(120)]"
+    "message_id": "[integer]",
+    "text_content": "[string(8192)]"
 }
 ```
 

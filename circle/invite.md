@@ -15,7 +15,7 @@ Informations to provide :
 {
     "token": "[JWT token]",
     "circle_id": "[integer]",
-    "email": "[string(128)]"
+    "email": "[string(120)]"
 }
 ```
 

@@ -1,12 +1,12 @@
-# Kick user from circle
+# List conversation (as Device)
 
-**URL** : `/circle/kick`
+**URL** : `/device/conversation/list`
 
 **Method** : `POST`
 
 **Authentication required** : YES (JWT token)
 
-**Permissions required** : User
+**Permissions required** : Device
 
 
 Informations to provide :
@@ -14,8 +14,7 @@ Informations to provide :
 ```json
 {
     "token": "[JWT token]",
-    "circle_id": "[integer]",
-    "email": "[string(120)]"
+    "circle_id": "[integer]"
 }
 ```
 
@@ -29,6 +28,14 @@ Informations to provide :
 
 ```json
 {
+    "content": [{
+                "id": "[integer]",
+                "name": "[string(120)]",
+                "created": "[datetime]",
+                "updated": "[datetime]",
+                "circle_id": "[integer]",
+                "device_access": "[boolean]"
+                }],
     "success": True
 }
 ```

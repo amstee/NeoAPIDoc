@@ -15,8 +15,8 @@ Informations to provide :
 
 ```json
 {
-    "email": "[unicode 128 chars max]",
-    "password": "[unicode 64 chars max]",
+    "email": "[string(120)]",
+    "password": "[string(50)]",
 }
 ```
 

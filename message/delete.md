@@ -1,6 +1,6 @@
-# Kick user from circle
+# Delete message
 
-**URL** : `/circle/kick`
+**URL** : `/message/delete`
 
 **Method** : `POST`
 
@@ -14,8 +14,7 @@ Informations to provide :
 ```json
 {
     "token": "[JWT token]",
-    "circle_id": "[integer]",
-    "email": "[string(120)]"
+    "message_id": "[integer]"
 }
 ```
 
@@ -34,6 +33,21 @@ Informations to provide :
 ```
 
 ## Error Responses
+
+**Condition** : Cannot delete this message.
+
+**Code** : `403 FORBIDDEN`
+
+**Content example**
+
+```json
+{
+    "message": "[Error message]",
+    "success": False
+}
+```
+
+### OR
 
 **Condition** : Error occured.
 

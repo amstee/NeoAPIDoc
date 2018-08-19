@@ -1,6 +1,6 @@
-# Kick user from circle
+# Invite user to conversation
 
-**URL** : `/circle/kick`
+**URL** : `/conversation/invite`
 
 **Method** : `POST`
 
@@ -14,8 +14,8 @@ Informations to provide :
 ```json
 {
     "token": "[JWT token]",
-    "circle_id": "[integer]",
-    "email": "[string(120)]"
+    "email": "[string(120)]",
+    "conversation_id": "[integer]"
 }
 ```
 
@@ -34,6 +34,21 @@ Informations to provide :
 ```
 
 ## Error Responses
+
+**Condition** : Missing necessary user right for this request.
+
+**Code** : `403 FORBIDDEN`
+
+**Content example**
+
+```json
+{
+    "message": "[Error message]",
+    "success": False
+}
+```
+
+### OR
 
 **Condition** : Error occured.
 

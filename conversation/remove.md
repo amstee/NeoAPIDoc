@@ -1,6 +1,6 @@
-# Kick user from circle
+# Remove device from conversation
 
-**URL** : `/circle/kick`
+**URL** : `/conversation/device/remove`
 
 **Method** : `POST`
 
@@ -14,8 +14,7 @@ Informations to provide :
 ```json
 {
     "token": "[JWT token]",
-    "circle_id": "[integer]",
-    "email": "[string(120)]"
+    "conversation_id": "[integer]"
 }
 ```
 

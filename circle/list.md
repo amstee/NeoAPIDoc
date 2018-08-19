@@ -29,7 +29,7 @@ Informations to provide :
 {
     "content": {
                 "id": "[integer]",
-                "name": "[string(128)]",
+                "name": "[string(120)]",
                 "created": "[datetime]",
                 "updated": "[datetime]",
                 "device": "[integer]"

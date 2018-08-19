@@ -1,6 +1,6 @@
-# Modify user password
+# Send first message
 
-**URL** : `/account/modify/password`
+**URL** : `/message/first-message`
 
 **Method** : `POST`
 
@@ -15,10 +15,13 @@ Informations to provide :
 {
     "token": "[JWT token]",
     "email": "[string(120)]",
-    "previous_password": "[string(50)]",
-    "new_password": "[string(50)]"
+    "circle_id": "[integer]",s
+    "text_message": "[string(8192)]",
+    *"files": "[undefined]"
 }
 ```
+
+* *Not mandatory
 
 ## Success Response
 
@@ -30,6 +33,14 @@ Informations to provide :
 
 ```json
 {
+    "message_id": "[integer]",
+    "media_list":   [{
+                        "id": "[integer]",
+                        "filename": "[string(120)]",
+                        "extension": "[string(120)]",
+                        "identifier": "[string(10)]",
+                        "uploaded": "[boolean]"
+                    }],
     "success": True
 }
 ```

@@ -1,6 +1,6 @@
-# Kick user from circle
+# First message to device
 
-**URL** : `/circle/kick`
+**URL** : `/message/device/first-message`
 
 **Method** : `POST`
 
@@ -15,9 +15,12 @@ Informations to provide :
 {
     "token": "[JWT token]",
     "circle_id": "[integer]",
-    "email": "[string(120)]"
+    "text_message": "[string(8192)]",
+    *"files": "[undefined]"
 }
 ```
+
+* *Not mandatory
 
 ## Success Response
 
@@ -29,6 +32,14 @@ Informations to provide :
 
 ```json
 {
+    "message_id": "[integer]",
+    "media_list":   [{
+                        "id": "[integer]",
+                        "filename": "[string(120)]",
+                        "extension": "[string(120)]",
+                        "identifier": "[string(10)]",
+                        "uploaded": "[boolean]"
+                    }],
     "success": True
 }
 ```
