@@ -1,4 +1,5 @@
 # Admin delete media
+**[HOME](../README.md)**
 
 **URL** : `/admin/media/delete`
 

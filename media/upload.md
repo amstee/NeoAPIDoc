@@ -1,4 +1,5 @@
 # Upload media
+**[HOME](../README.md)**
 
 **URL** : `/media/upload/<media_id>`
 

@@ -1,4 +1,5 @@
 # Log out from Account
+**[HOME](../README.md)**
 
 Log out from account (invalidating JWT token).
 

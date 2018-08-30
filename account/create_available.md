@@ -1,4 +1,5 @@
 # Checking email availability
+**[HOME](../README.md)**
 
 Checking email availability.
 

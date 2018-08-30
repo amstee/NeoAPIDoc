@@ -1,4 +1,5 @@
 # Delete media
+**[HOME](../README.md)**
 
 **URL** : `/media/delete`
 

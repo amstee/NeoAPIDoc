@@ -1,4 +1,5 @@
 # Delete message
+**[HOME](../README.md)**
 
 **URL** : `/message/delete`
 

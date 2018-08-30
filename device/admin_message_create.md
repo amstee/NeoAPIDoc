@@ -1,4 +1,5 @@
 # Create message (As admin, As device)
+**[HOME](../README.md)**
 
 **URL** : `/admin/device/message/create`
 

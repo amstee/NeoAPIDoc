@@ -1,4 +1,5 @@
 # Remove device from conversation
+**[HOME](../README.md)**
 
 **URL** : `/conversation/device/remove`
 

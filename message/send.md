@@ -1,4 +1,5 @@
 # Send message
+**[HOME](../README.md)**
 
 **URL** : `/message/send`
 
@@ -40,7 +41,7 @@ Informations to provide :
                         "identifier": "[string(10)]",
                         "uploaded": "[boolean]"
                     }],
-    "success": True
+    "success": true
 }
 ```
 
@@ -55,6 +56,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```

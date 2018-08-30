@@ -1,4 +1,5 @@
 # Invite user to conversation
+**[HOME](../README.md)**
 
 **URL** : `/conversation/invite`
 

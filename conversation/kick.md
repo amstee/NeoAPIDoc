@@ -1,4 +1,5 @@
 # Kick user from conversation
+**[HOME](../README.md)**
 
 **URL** : `/conversation/kick`
 

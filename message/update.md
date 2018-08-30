@@ -1,4 +1,5 @@
 # Update message
+**[HOME](../README.md)**
 
 **URL** : `/message/update`
 
@@ -47,5 +48,3 @@ Informations to provide :
     "success": false
 }
 ```
-
-## [HOME](../README.md)

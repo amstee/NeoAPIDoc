@@ -1,4 +1,5 @@
 # Checking JWT validity
+**[HOME](../README.md)**
 
 **URL** : `/token/verify`
 
