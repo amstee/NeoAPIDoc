@@ -28,13 +28,15 @@ Informations to provide :
 
 ```json
 {
-    "content": {
-                "id": "[integer]",
-                "name": "[string(120)]",
-                "created": "[datetime]",
-                "updated": "[datetime]",
-                "device": "[integer]"
-               },
+    "content": [
+        {
+            "id": "[integer]",
+            "name": "[string(120)]",
+            "created": "[datetime]",
+            "updated": "[datetime]",
+            "device": "[integer]"
+        }
+    ],
     "success": True
 }
 ```

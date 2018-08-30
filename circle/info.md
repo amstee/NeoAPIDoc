@@ -30,44 +30,93 @@ Informations to provide :
 ```json
 {
     "content": {
+        "id": "[integer]",
+        "name": "[string(120)]",
+        "updated": "[string(datetime)]",
+        "conversations": [
+            {
+                "circle_id": "[integer]",
+                "created": "[string(datetime)]",
+                "device_access": "[boolean]",
                 "id": "[integer]",
-                "name": "[string(128)]",
-                "created": "[datetime]",
-                "updated": "[datetime]",
-                "users": {
-                            "id": "[integer]",
-                            "user": {
-                                    "id": "[integer]",
-                                    "email": "[string(128)]",
-                                    "first_name": "[string(64)]",
-                                    "last_name": "[string(64)]",
-                                    "birthday": "[datetime]",
-                                    "created": "[datetime]",
-                                    "updated": "[datetime]",
-                                    "isOnline": "[boolean]",
-                                    "type": "[string(16)]",
-                                    },
-                            "circle": "[integer]",
-                            "created": "[datetime]",
-                            "updated": "[datetime]",
-                            "privilege": "[string(16)]"
-                         },
-                "device": {
-                            "id": "[integer]",
-                            "name": "[string(128)]",
-                            "created": "[datetime]",
-                            "updated": "[datetime]",
-                            "circle_id": "[integer]",
-                            "activated": "[boolean]",
-                            "username": "[string(128)]",
-                            "is_online": "[boolean]"
-                          },
-                "invites": [invite.get_content(False) for invite in self.circle_invite],
-                "conversations": [conv.get_simple_content() for conv in self.conversations],
-                "medias": [link.get_content() for link in self.media_links]
-                
-               },
-    "success": True
+                "name": "[string(120)]",
+                "updated": "[string(datetime)]"
+            }
+        ],
+        "created": "[string(datetime)]",
+        "device": {
+            "activated": "[boolean]",
+            "circle_id": "[integer]",
+            "created": "[string(datetime)]",
+            "id": "[integer]",
+            "is_online": "[boolean]",
+            "name": "[string(120)]",
+            "updated": "[string(datetime)]",
+            "username": "[string(120)]"
+        },
+        "invites": [
+            {
+                "id": "[integer]",
+                "updated": "[string(datetime)]",
+                "created": "[string(datetime)]",
+                "user": "[integer]",
+                "circle": {
+                        "id": "[integer]",
+                        "circle_id": "[integer]",
+                        "user_id": "[integer]",
+                        "created": "[string(datetime)]",
+                        "updated": "[string(datetime)]"
+                }
+            }
+        ],
+        "medias": [
+            {
+                "id": "[integer]",
+                "user": {
+                    "id": "[integer]",
+                    "email": "[string(120)]",
+                    "first_name": "[string(50)]",
+                    "last_name": "[string(50)]",
+                    "birthday": "[string(datetime)]",
+                    "created": "[string(datetime)]",
+                    "updated": "[string(datetime)]",
+                    "isOnline": "[boolean]",
+                    "type": "[string(10)]",
+                },
+                "media": {
+                    "id": "[integer]",
+                    "filename": "[string(120)]",
+                    "extension": "[string(10)]",
+                    "identifier": "[string(10)]",
+                    "uploaded": "[string]"
+                },
+                "upload_time": "[string(datetime)]",
+                "purpose": "[string(16)]"
+            }
+
+        ],
+        "users": [
+            {
+                "circle": 1,
+                "created": "Thu, 30 Aug 2018 02:46:45 GMT",
+                "id": 1,
+                "privilege": "ADMIN",
+                "updated": "Thu, 30 Aug 2018 02:46:45 GMT",
+                "user": {
+                    "birthday": "Thu, 05 Sep 2019 00:00:00 GMT",
+                    "created": "Thu, 30 Aug 2018 02:46:45 GMT",
+                    "email": "user1.beta@test.com",
+                    "first_name": "user1",
+                    "id": 2,
+                    "isOnline": false,
+                    "last_name": "beta",
+                    "type": "DEFAULT",
+                    "updated": "Thu, 30 Aug 2018 02:46:45 GMT"
+                }
+            }
+        ]
+    },
+    "success": true
 }
 ```
 
