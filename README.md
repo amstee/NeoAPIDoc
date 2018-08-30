@@ -35,7 +35,7 @@ Endpoints for viewing, manipulating and creating circles.
 
 ### Conversation related
 
-Endpoint for viewing, manipulating and creating conversations.
+Endpoints for viewing, manipulating and creating conversations.
 
 * [Create conversation (as Admin)](conversation/create.md): `POST /admin/conversation/create`
 * [Delete conversation (as Admin)](conversation/delete.md): `POST /admin/conversation/delete`
@@ -53,7 +53,7 @@ Endpoint for viewing, manipulating and creating conversations.
 
 ### Message related
 
-Endpoint for viewing, manipulating and creating messages.
+Endpoints for viewing, manipulating and creating messages.
 
 * [Create message (as Admin)](message/admin_create.md): `POST /admin/message/create`
 * [Delete message](message/delete.md): `POST /message/delete`
@@ -68,10 +68,25 @@ Endpoint for viewing, manipulating and creating messages.
 
 ### Device related
 
-Endpoint used by NEO device.
+Endpoints used by NEO device.
 
 * [Create message (as Admin)](device/admin_message_create.md): `POST /admin/device/message/create`
 * [Delete message](device/message_delete.md): `POST /device/message/delete`
 * [Message informations](device/message_info.md): `POST /device/message/info`
 * [List messages](device/message_list.md): `POST /device/message/list`
 * [Update message](device/message_update.md): `POST /device/message/update`
+
+### Media related
+
+Endpoints for creating, uploading and retrieving medias.
+
+* [Delete media](media/delete.md): `POST /media/delete | /device/media/delete`
+* [Media informations](media/info.md): `POST /media/info | /device/media/info`
+* [List medias (for a message)](media/list.md): `POST /media/list | /device/media/list`
+* [Media delete (as admin)](media/delete_admin.md): `POST /admin/media/delete`
+* [Media update (as admin)](media/update_admin.md): `POST /admin/media/update`
+* [Media informations (as admin)](media/info_admin.md): `POST /admin/media/infp`
+* [Create media](media/create.md): `POST /media/create | /device/media/create`
+* [Find media](media/find.md): `POST /media/find | /device/media/find`
+* [upload media](media/upload.md): `POST /media/upload | /device/media/upload`
+* [retrieve media](media/request.md): `POST /media/retrieve | /device/media/retrieve`

@@ -32,22 +32,27 @@ Informations to provide :
     "content":  [{
                     "id": "[integer]",
                     "link": {
-                                "id": "[integer]",
-                                "created": "[datetime]",
-                                "updated": "[datetime]",
-                                "privilege": "[string(10)]",
-                                "user_id": "[integer]",
-                                "conversation_id": "[integer]",
-                                "circle_id": "[integer]"
-                            },
+                        "id": "[integer]",
+                        "created": "[datetime]",
+                        "updated": "[datetime]",
+                        "privilege": "[string(10)]",
+                        "user_id": "[integer]",
+                        "conversation_id": "[integer]",
+                        "circle_id": "[integer]"
+                    },
                     "sent": "[boolean]",
                     "read": "[boolean]",
                     "content": "[string(8192)]",
-                    "medias":   [
-                                    media.get_content() for media in self.media_links
-                                ]
+                    "medias":   [{
+                        "id": "[integer]",
+                        "filename": ["string"],
+                        "extension": "[string]",
+                        "identifier": "[string]",
+                        "uploaded": "[string]"
+                        }
+                    ]
                 }],
-    "success": True
+    "success": true
 }
 ```
 
@@ -62,6 +67,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```

@@ -16,7 +16,7 @@ Informations to provide :
     "token": "[JWT token]",
     "circle_id": "[integer]",
     "text_message": "[string(8192)]",
-    *"files": "[undefined]"
+    "files": "[undefined]"
 }
 ```
 
@@ -40,7 +40,7 @@ Informations to provide :
                         "identifier": "[string(10)]",
                         "uploaded": "[boolean]"
                     }],
-    "success": True
+    "success": true
 }
 ```
 
@@ -55,6 +55,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```

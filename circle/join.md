@@ -28,7 +28,7 @@ Informations to provide :
 
 ```json
 {
-    "success": True
+    "success": true
 }
 ```
 
