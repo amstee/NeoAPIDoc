@@ -44,6 +44,8 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```
+
+## [HOME](../README.md)
