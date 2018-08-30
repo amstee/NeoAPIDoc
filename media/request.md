@@ -8,7 +8,7 @@
 
 **Authentication required** : YES (JWT token)
 
-**Permissions required** : User | Device & Access to media
+**Permissions required** : User | Device & Access to the media
 
 **Description :**
 Retrieve a given media

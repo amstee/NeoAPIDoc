@@ -8,7 +8,7 @@
 
 **Authentication required** : YES (JWT token)
 
-**Permissions required** : User | Device
+**Permissions required** : User | Device & Access to the message
 
 **Description :**
 List all medias for a given message
