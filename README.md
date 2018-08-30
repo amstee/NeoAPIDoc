@@ -60,7 +60,7 @@ Endpoints for viewing, manipulating and creating messages.
 * [Message informations](message/info.md): `POST /message/info`
 * [Update message](message/update.md): `POST /message/update`
 * [List messages in conversation](message/list.md): `POST /conversation/message/list`
-* [First message (as Device)](message/device_first_messsage.md): `POST /device/message/first-message`
+* [First message (as Device)](message/device_first_message.md): `POST /device/message/first-message`
 * [Send message (as Device)](message/device_send.md): `POST /device/message/send`
 * [Send first message](message/first_message.md): `POST /message/first-message`
 * [Send message](message/send.md): `POST /message/send`
@@ -82,7 +82,7 @@ Endpoints for creating, uploading and retrieving medias.
 
 * [Delete media](media/delete.md): `POST /media/delete | /device/media/delete`
 * [Media informations](media/info.md): `POST /media/info | /device/media/info`
-* [List medias (for a message)](media/list.md): `POST /media/list | /device/media/list`
+* [List medias (for a message)](media/media_list.md): `POST /media/list | /device/media/list`
 * [Media delete (as admin)](media/delete_admin.md): `POST /admin/media/delete`
 * [Media update (as admin)](media/update_admin.md): `POST /admin/media/update`
 * [Media informations (as admin)](media/info_admin.md): `POST /admin/media/infp`
