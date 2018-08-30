@@ -31,41 +31,87 @@ Informations to provide :
 ```json
 {
     "content": {
+        "birthday": "[string(datetime)]",
+        "circles": [
+            {
+                "circle": {
+                    "created": "[string(datetime)]",
+                    "device": "[integer]",
+                    "id": "[integer]",
+                    "name": "[string(120)]",
+                    "updated": "[string(datetime)]"
+                },
+                "created": "[string(datetime)]",
                 "id": "[integer]",
-                "email": "[string(128)]",
-                "first_name": "[string(64)]",
-                "last_name": "[string(64)]",
-                "birthday": "[datetime]",
-                "created": "[datetime]",
-                "updated": "[datetime]",
-                "isOnline": "[boolean]",
-                "type": "[string(16)]",
-                "hangout": "[boolean]",
-                "facebook": "[boolean]",
-                "circles": {
-                            "id": "[integer]",
-                            "name": "[string(128)]",
-                            "created": "[datetime]",
-                            "updated": "[datetime]",
-                            "users": {
-                                        "id": "[integer]",
-                                        "created": "",
-                                        "updated": self.updated,
-                                        "privilege": self.privilege,
-                                        "user_id": self.user.get_simple_content(),
-                                        "conversation_id": self.conversation.get_simple_content(),
-                                        "messages": [message.get_simple_content() for message in self.messages]
-                                     },
-                            "device": self.device.get_simple_content() if self.device is not None else {},
-                            "invites": [invite.get_content(False) for invite in self.circle_invite],
-                            "conversations": [conv.get_simple_content() for conv in self.conversations],
-                            "medias": [link.get_content() for link in self.media_links]
-                           },
-                "invites": [invite.get_content() for invite in self.circle_invite],
-                "conversations": [link.get_simple_content() for link in self.conversation_links],
-                "medias": [link.get_content() for link in self.media_links]
-               },
-    "success": True
+                "privilege": "[string(10)]",
+                "updated": "[string(datetime)]",
+                "user": "[integer]"
+            }
+        ],
+        "conversations": [
+            {
+                "circle_id": "[integer]",
+                "conversation_id": "[integer]",
+                "created": "[string(datetime)]",
+                "id": "[integer]",
+                "privilege": "[string(10)]",
+                "updated": "[string(datetime)]",
+                "user_id": "[integer]"
+            }
+        ],
+        "created": "[string(datetime)]",
+        "email": "[string(120)]",
+        "facebook": "[boolean]",
+        "first_name": "[string(50)]",
+        "hangout": "[boolean]",
+        "id": "[integer]",
+        "invites": [
+            {
+                "id": "[integer]",
+                "updated": "[string(datetime)]",
+                "created": "[string(datetime)]",
+                "user": "[integer]",
+                "circle": {
+                        "id": "[integer]",
+                        "circle_id": "[integer]",
+                        "user_id": "[integer]",
+                        "created": "[string(datetime)]",
+                        "updated": "[string(datetime)]"
+                }
+            }
+        ],
+        "isOnline": "[boolean]",
+        "last_name": "[string(50)]",
+        "medias": [
+            {
+                "id": "[integer]",
+                "user": {
+                    "id": "[integer]",
+                    "email": "[string(120)]",
+                    "first_name": "[string(50)]",
+                    "last_name": "[string(50)]",
+                    "birthday": "[string(datetime)]",
+                    "created": "[string(datetime)]",
+                    "updated": "[string(datetime)]",
+                    "isOnline": "[boolean]",
+                    "type": "[string(10)]",
+                },
+                "media": {
+                    "id": "[integer]",
+                    "filename": "[string(120)]",
+                    "extension": "[string(10)]",
+                    "identifier": "[string(10)]",
+                    "uploaded": "[string]"
+                },
+                "upload_time": "[string(datetime)]",
+                "purpose": "[string(16)]"
+            }
+
+        ],
+        "type": "[string(10)]",
+        "updated": "[string(datetime)]"
+    },
+    "success": true
 }
 ```
 
