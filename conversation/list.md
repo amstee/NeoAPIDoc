@@ -1,7 +1,7 @@
 # List conversation
 **[HOME](../README.md)**
 
-**URL** : `/conversation/kick`
+**URL** : `/conversation/list`
 
 **Method** : `POST`
 
@@ -29,14 +29,16 @@ Informations to provide :
 
 ```json
 {
-    "content":  {
-                    "id": "[integer]",
-                    "name": "[string(120)]",
-                    "created": "[datetime]",
-                    "updated": "[datetime]",
-                    "circle_id": "[integer]",
-                    "device_access": "[boolean]"
-                },
+    "content": [
+        {
+            "id": "[integer]",
+            "name": "[string(120)]",
+            "created": "[datetime]",
+            "updated": "[datetime]",
+            "circle_id": "[integer]",
+            "device_access": "[boolean]"
+        }
+    ],
     "success": True
 }
 ```
