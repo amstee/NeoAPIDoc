@@ -29,24 +29,42 @@ Informations to provide :
 
 ```json
 {
-    "content":  {
+    "content": {
+        "id": "[integer]",
+        "sent": "[boolean]",
+        "read": "[boolean]",
+        "content": "[string(8192)]",
+        "link": {
                     "id": "[integer]",
-                    "link": {
-                                "id": "[integer]",
-                                "created": "[datetime]",
-                                "updated": "[datetime]",
-                                "privilege": "[string(10)]",
-                                "user_id": "[integer]",
-                                "conversation_id": "[integer]",
-                                "circle_id": "[integer]"
-                            },
-                    "sent": "[boolean]",
-                    "read": "[boolean]",
+                    "created": "[datetime]",
+                    "updated": "[datetime]",
+                    "privilege": "[string(10)]",
+                    "user_id": "[integer]",
+                    "conversation_id": "[integer]",
+                    "circle_id": "[integer]"
+        },
+        "medias": [
+            {
+                "id": "[integer]",
+                "upload_time": "[string(datetime)]",
+                "message": {
+                    "id": "[integer]",
+                    "link_id": "[integer]",
+                    "sent": "[string(datetime)]",
+                    "read": "[string(datetime)]",
                     "content": "[string(8192)]",
-                    "medias":   [
-                                    media.get_content() for media in self.media_links
-                                ]
+                    "medias": "[integer]"
                 },
+                "media": {
+                    "id": "[integer]",
+                    "filename": "[string(120)]",
+                    "extension": "[sting(10)]",
+                    "identifier": "[string(10)]",
+                    "uploaded": "[string(boolean)]"
+                }
+            }
+        ]
+    },
     "success": True
 }
 ```

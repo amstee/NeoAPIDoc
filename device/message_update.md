@@ -14,7 +14,7 @@ Informations to provide :
 
 ```json
 {
-    "token": "[JWT token]",
+    "device_token": "[JWT token]",
     "message_id": "[integer]",
     "text_content": "[string(8192)]"
 }

@@ -14,7 +14,7 @@ Informations to provide :
 
 ```json
 {
-    "token": "[JWT token]",
+    "device_token": "[JWT token]",
     "conversation_id": "[integer]",
     "quantity": "[integer]"
 }
@@ -30,29 +30,45 @@ Informations to provide :
 
 ```json
 {
-    "content":  [{
+    "content": [
+        {
+            "id": "[integer]",
+            "sent": "[boolean]",
+            "read": "[boolean]",
+            "content": "[string(8192)]",
+            "device": {
+                "id": "[integer]",
+                "name": "[string(120)]",
+                "created": "[string(datetime)]",
+                "updated": "[string(datetime)]",
+                "circle_id": "[integer]",
+                "activated": "[boolean]",
+                "username": "[string(120)]",
+                "is_online": "[boolean]"
+            },
+            "medias": [
+                {
                     "id": "[integer]",
-                    "link": {
+                    "upload_time": "[string(datetime)]",
+                    "message": {
                         "id": "[integer]",
-                        "created": "[datetime]",
-                        "updated": "[datetime]",
-                        "privilege": "[string(10)]",
-                        "user_id": "[integer]",
-                        "conversation_id": "[integer]",
-                        "circle_id": "[integer]"
+                        "link_id": "[integer]",
+                        "sent": "[string(datetime)]",
+                        "read": "[string(datetime)]",
+                        "content": "[string(8192)]",
+                        "medias": "[integer]"
                     },
-                    "sent": "[boolean]",
-                    "read": "[boolean]",
-                    "content": "[string(8192)]",
-                    "medias":   [{
+                    "media": {
                         "id": "[integer]",
-                        "filename": ["string"],
-                        "extension": "[string]",
-                        "identifier": "[string]",
-                        "uploaded": "[string]"
-                        }
-                    ]
-                }],
+                        "filename": "[string(120)]",
+                        "extension": "[sting(10)]",
+                        "identifier": "[string(10)]",
+                        "uploaded": "[string(boolean)]"
+                    }
+                }
+            ]
+        }
+    ],
     "success": true
 }
 ```
