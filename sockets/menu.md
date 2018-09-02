@@ -77,13 +77,13 @@ Each json contains the conversation id.
 
 Description | Channel | JSON
 :---: | :---: | :---:
-info update | conversation | ``
-invite | conversation | ``
-user promotion | conversation | ``
-user kick | conversation | ``
-user quit | conversation | ``
-add device | conversation | ``
-remove device | conversation | ``
+info update | conversation | `{ 'event': 'update' }`
+invite | conversation | `{'event': 'invite', 'conversation_id': link.conversation_id}`
+user promotion | conversation | `{'event': 'promoted', 'conversation_id': link.conversation_id}`
+user kick | conversation | `{'event': 'kick', 'user': dest.email, 'from': user.email}`
+user quit | conversation | `{'event': 'quit', 'user': user.email}`
+add device | conversation | `{'event': 'device', 'type': 'add'}`
+remove device | conversation | `{'event': 'device', 'type': 'remove'`
 
 ### Messages Events
 
