@@ -2,7 +2,11 @@
 
 This is the api documentation which will detail the available route, how to access them, their parameters and answers.
 
-### Account related
+### Web Sockets
+
+[Menu](sockets/menu.md) : Description of the web sockets handlers
+
+### Account
 
 Endpoints for viewing, manipulating and creating accounts.
 
@@ -17,7 +21,7 @@ Endpoints for viewing, manipulating and creating accounts.
 * [Promote account (as Admin)](account/promote.md) : `POST /admin/account/promote`
 * [Account information (as Device)](account/device_info.md) : `POST /device/account/info`
 
-### Circle related
+### Circle
 
 Endpoints for viewing, manipulating and creating circles.
 
@@ -33,7 +37,7 @@ Endpoints for viewing, manipulating and creating circles.
 * [List circles](circle/list.md): `POST /circle/list`
 * [Circle informations (as Device)](circle/device_info.md): `POST /device/circle/info`
 
-### Conversation related
+### Conversation
 
 Endpoints for viewing, manipulating and creating conversations.
 
@@ -51,7 +55,7 @@ Endpoints for viewing, manipulating and creating conversations.
 * [Promote user in conversation](conversation/promote.md): `POST /conversation/promote`
 * [Add device in conversation](conversation/device_add.md): `POST /conversation/device/add`
 
-### Message related
+### Message
 
 Endpoints for viewing, manipulating and creating messages.
 
@@ -66,7 +70,7 @@ Endpoints for viewing, manipulating and creating messages.
 * [Send message](message/send.md): `POST /message/send`
 * [Send first message to device](message/first-message_to_device.md): `POST /message/device/first-message`
 
-### Device related
+### Device
 
 Endpoints used by NEO device.
 
@@ -76,7 +80,7 @@ Endpoints used by NEO device.
 * [List messages](device/message_list.md): `POST /device/message/list`
 * [Update message](device/message_update.md): `POST /device/message/update`
 
-### Media related
+### Media
 
 Endpoints for creating, uploading and retrieving medias.
 
