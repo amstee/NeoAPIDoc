@@ -24,11 +24,11 @@ Resources for viewing, manipulating and creating accounts.
 
 Resources for viewing, manipulating devices.
 
-* [Create account](device/update.md) : `POST /device/update`
-* [Log in account](device/info.md) : `POST /device/info/<device_id>`
-* [Log out account](device/login.md) : `POST /device/authenticate`
-* [Account informations](device/info.md) : `POST /device/logout`
-* [Check username availability](device/create_available.md) : `GET /device/username/available/<username>`
+* [Update device](device/update.md) : `POST /device/update`
+* [Log in device](device/device_info.md) : `POST /device/authenticate`
+* [Log out device](device/login.md) : `POST /device/logout`
+* [Device informations](device/logout.md) : `POST /device/info/<device_id>`
+* [Check username availability](device/available.md) : `GET /device/username/available/<username>`
 * [Modify device password](device/modify_password.md) : `PUT /device/modify/password`
 * [Verify device token validity](device/token.md) : `POST /device/token/verify`
 

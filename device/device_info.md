@@ -1,11 +1,11 @@
-# Login
+# Device Info
 **[HOME](../README.md)**
 
-Log in account (receiving JWT token).
+Device info.
 
-**URL** : `/account/login`
+**URL** : `/device/info/<device_id>`
 
-**Method** : `POST`
+**Method** : `GET`
 
 **Authentication required** : NO
 
@@ -14,10 +14,10 @@ Log in account (receiving JWT token).
 
 Informations to provide :
 
+HEADER --> Authorization
 ```json
 {
-    "email": "[string(120)]",
-    "password": "[string(50)]",
+    "device_token": "[string]"
 }
 ```
 
@@ -31,8 +31,7 @@ Informations to provide :
 
 ```json
 {
-    "token": "[JWT token]",
-    "success": True
+    "success": true
 }
 ```
 
@@ -40,13 +39,13 @@ Informations to provide :
 
 **Condition** : Error occured.
 
-**Code** : `403 FORBIDDEN`
+**Code** : `400 An error occured`
 
 **Content example**
 
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```

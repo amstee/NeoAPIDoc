@@ -1,9 +1,9 @@
-# Login
+# Login Device
 **[HOME](../README.md)**
 
-Log in account (receiving JWT token).
+Log in device (receiving JWT token).
 
-**URL** : `/account/login`
+**URL** : `/device/authenticate`
 
 **Method** : `POST`
 
@@ -16,8 +16,8 @@ Informations to provide :
 
 ```json
 {
-    "email": "[string(120)]",
-    "password": "[string(50)]",
+    "username": "[string]",
+    "password": "[string]"
 }
 ```
 
@@ -32,7 +32,7 @@ Informations to provide :
 ```json
 {
     "token": "[JWT token]",
-    "success": True
+    "success": true
 }
 ```
 
@@ -47,6 +47,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```
