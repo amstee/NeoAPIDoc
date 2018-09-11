@@ -3,18 +3,18 @@
 
 **URL** : `/message/update`
 
-**Method** : `POST`
+**Method** : `PUT`
 
 **Authentication required** : YES (JWT token)
 
-**Permissions required** : User
+**Permissions required** : User | Device & Being owner of the message
 
 
 Informations to provide :
 
 ```json
 {
-    "token": "[JWT token]",
+    "token | device_token": "[string]",
     "message_id": "[integer]",
     "text_content": "[string(8192)]"
 }
@@ -30,7 +30,7 @@ Informations to provide :
 
 ```json
 {
-    "success": True
+    "success": true
 }
 ```
 

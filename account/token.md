@@ -29,7 +29,7 @@ Informations to provide :
 ```json
 {
     "message": "Le token json est valide",
-    "success": True
+    "success": true
 }
 ```
 
@@ -44,6 +44,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```

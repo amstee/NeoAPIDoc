@@ -3,8 +3,6 @@
 
 **URL** : `/media/retrieve`
 
-**URL DEVICE** : `/device/media/retrieve`
-
 **Method** : `POST`
 
 **Authentication required** : YES (JWT token)
@@ -14,10 +12,11 @@
 **Description :**
 Retrieve a given media
 
-Informations to provide in headers :
+Informations to provide in body :
 
 ```json
 {
+  "token | device_token": "[string]",
   "media_id": "[integer]"
 }
 ```

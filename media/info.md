@@ -1,11 +1,9 @@
 # Media info
 **[HOME](../README.md)**
 
-**URL** : `/media/info`
+**URL** : `/media/info/<media_id>`
 
-**URL DEVICE** : `/device/media/info`
-
-**Method** : `POST`
+**Method** : `GET`
 
 **Authentication required** : YES (JWT token)
 
@@ -14,11 +12,11 @@
 **Description :**
 Get a media informations
 
-Informations to provide :
+Informations to provide in header :
 
 ```json
 {
-  "media_id": "[integer}"
+    "Authorization": "[string]"
 }
 ```
 

@@ -16,6 +16,7 @@ Informations to provide :
 
 ```json
 {
+  "token | device_token": "[string]",
   "media_id": "[integer]"
 }
 ```

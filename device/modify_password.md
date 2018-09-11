@@ -4,7 +4,7 @@
 
 **URL** : `/device/modify/password`
 
-**Method** : `POST`
+**Method** : `PUT`
 
 **Authentication required** : NO
 

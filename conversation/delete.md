@@ -3,7 +3,7 @@
 
 **URL** : `/admin/conversation/delete`
 
-**Method** : `POST`
+**Method** : `DELETE`
 
 **Authentication required** : YES (JWT token)
 
@@ -29,7 +29,7 @@ Informations to provide :
 
 ```json
 {
-    "success": True
+    "success": true
 }
 ```
 
@@ -44,6 +44,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```

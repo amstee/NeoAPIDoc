@@ -1,21 +1,30 @@
 # Circle informations
 **[HOME](../README.md)**
 
-**URL** : `/circle/info`
+**URL** : `/circle/info/<circle_id>`
 
-**Method** : `POST`
+**URL POST** : `/circle/info`
+
+**Method** : `GET`
 
 **Authentication required** : YES (JWT token)
 
-**Permissions required** : User
+**Permissions required** : User | Device
 
-
-Informations to provide :
+Informations to provide in header for GET :
 
 ```json
 {
-    "token": "[JWT token]",
-    "circle_id": "[integer]"
+    "Authorization": "[string]"
+}
+```
+
+Informations to provide for POST:
+
+```json
+{
+    "device_token | token": "[JWT token]",
+    "(Optional for device) circle_id": "[integer]"
 }
 ```
 
@@ -131,6 +140,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```

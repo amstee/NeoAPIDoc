@@ -1,20 +1,20 @@
 # List circles
 **[HOME](../README.md)**
 
-**URL** : `/circle/list`
+**URL** : `/user/circle/list`
 
-**Method** : `POST`
+**Method** : `GET`
 
 **Authentication required** : YES (JWT token)
 
 **Permissions required** : User
 
 
-Informations to provide :
+Informations to provide in header :
 
 ```json
 {
-    "token": "[JWT token]"
+    "Authorization": "[string]"
 }
 ```
 
@@ -37,7 +37,7 @@ Informations to provide :
             "device": "[integer]"
         }
     ],
-    "success": True
+    "success": true
 }
 ```
 
@@ -52,6 +52,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```

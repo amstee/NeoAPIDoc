@@ -14,7 +14,7 @@ Informations to provide :
 
 ```json
 {
-    "token": "[JWT token]",
+    "token | device_token": "[string]",
     "email": "[string(120)]",
     "conversation_id": "[integer]"
 }
@@ -30,7 +30,7 @@ Informations to provide :
 
 ```json
 {
-    "success": True
+    "success": true
 }
 ```
 
@@ -45,7 +45,7 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```
 
@@ -60,6 +60,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```

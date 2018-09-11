@@ -1,20 +1,22 @@
-# Add device to conversation
+# Add / Remove device to conversation
 **[HOME](../README.md)**
 
-**URL** : `/conversation/device/add`
+The device is able to call this route but only to remove himself from the conversation
 
-**Method** : `POST`
+**URL** : `/conversation/device/set`
+
+**Method** : `PUT`
 
 **Authentication required** : YES (JWT token)
 
-**Permissions required** : User
+**Permissions required** : User | Device & Being member of the conversation
 
 
 Informations to provide :
 
 ```json
 {
-    "token": "[JWT token]",
+    "token | device_token": "[string]",
     "conversation_id": "[integer]"
 }
 ```
@@ -29,7 +31,7 @@ Informations to provide :
 
 ```json
 {
-    "success": True
+    "success": true
 }
 ```
 
@@ -44,6 +46,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```

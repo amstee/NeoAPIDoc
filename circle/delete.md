@@ -1,9 +1,9 @@
 # Delete cirle
 **[HOME](../README.md)**
 
-**URL** : `/circle/delete`
+**URL** : `/admin/circle/delete`
 
-**Method** : `POST`
+**Method** : `DELETE`
 
 **Authentication required** : YES (JWT token)
 

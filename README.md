@@ -27,7 +27,8 @@ Resources for viewing, manipulating devices.
 * [Update device](device/update.md) : `POST /device/update`
 * [Log in device](device/login.md) : `POST /device/authenticate`
 * [Log out device](device/logout.md) : `POST /device/logout`
-* [Device informations](device/logout.md) : `POST /device/info/<device_id>`
+* [Device informations](device/device_info.md) : `GET /device/info/<device_id>`
+* [Device informations](device/device_info.md) : `POST /device/info`
 * [Check username availability](device/available.md) : `GET /device/username/available/<username>`
 * [Modify device password](device/modify_password.md) : `PUT /device/modify/password`
 * [Verify device token validity](device/token.md) : `POST /device/token/verify`
@@ -56,7 +57,7 @@ Resources for viewing, manipulating and creating conversations.
 * [Invite user to conversation](conversation/invite.md): `POST /conversation/invite`
 * [Kick user from conversation](conversation/kick.md): `POST /conversation/kick`
 * [Quit conversation](conversation/quit.md): `POST /conversation/quit`
-* [Add/Remove device from conversation](conversation/remove.md): `PUT /conversation/device/set`
+* [Add/Remove device from conversation](conversation/device_add.md): `PUT /conversation/device/set`
 * [Promote user in conversation](conversation/promote.md): `PUT /conversation/promote`
 
 ### Message
@@ -80,7 +81,6 @@ Resources for creating, uploading and retrieving medias.
 * [Delete media](media/delete.md): `DELETE /media/delete`
 * [Media informations](media/info.md): `GET /media/info/<media_id>`
 * [List medias (for a message)](media/media_list.md): `GET /message/media/list/<message_id>`
-* [Media informations (as admin)](media/info_admin.md): `POST /admin/media/info`
 * [Create media](media/create.md): `POST /media/create`
 * [Find media](media/find.md): `POST /media/find`
 * [upload media](media/upload.md): `POST /media/upload/<media_id>`
@@ -93,6 +93,7 @@ Resources available for Admin users
 
 * [Media delete](media/delete_admin.md): `DELETE /admin/media/delete`
 * [Media update](media/update_admin.md): `PUT /admin/media/update`
+* [Media informations (as admin)](media/info_admin.md): `POST /admin/media/info`
 * [Create conversation](conversation/create.md): `POST /admin/conversation/create`
 * [Delete conversation](conversation/delete.md): `DELETE /admin/conversation/delete`
 * [Delete circle](circle/delete.md): `DELETE /admin/circle/delete`

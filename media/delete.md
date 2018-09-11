@@ -3,9 +3,7 @@
 
 **URL** : `/media/delete`
 
-**URL DEVICE** : `/device/media/delete`
-
-**Method** : `POST`
+**Method** : `DELETE`
 
 **Authentication required** : YES (JWT token)
 
@@ -19,6 +17,7 @@ Informations to provide :
 
 ```json
 {
+  "token | device_token": "[string]",
   "media_id": "[integer]"
 }
 ```

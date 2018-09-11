@@ -44,7 +44,7 @@ Informations to provide :
 ```json
 {
     "message": "Action non authorisée",
-    "success": False
+    "success": false
 }
 ```
 
@@ -59,6 +59,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```

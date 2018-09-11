@@ -1,22 +1,19 @@
 # List messages
 **[HOME](../README.md)**
 
-**URL** : `/message/list`
+**URL** : `/message/list/<conversation_id>/<quantity>`
 
-**Method** : `POST`
+**Method** : `GET`
 
 **Authentication required** : YES (JWT token)
 
-**Permissions required** : User
+**Permissions required** : User | Device & Access to the conversation
 
-
-Informations to provide :
+Informations to provide in header :
 
 ```json
 {
-    "token": "[JWT token]",
-    "conversation_id": "[integer]",
-    "quantity": "[integer]"
+    "Authorization": "[string]"
 }
 ```
 
@@ -68,7 +65,7 @@ Informations to provide :
             ]
         }
     ],
-    "success": True
+    "success": true
 }
 ```
 
@@ -83,6 +80,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```

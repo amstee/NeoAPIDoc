@@ -17,7 +17,7 @@ Informations to provide :
 ```json
 {
     "email": "[string(120)]",
-    "password": "[string(50)]",
+    "password": "[string(50)]"
 }
 ```
 
@@ -32,7 +32,7 @@ Informations to provide :
 ```json
 {
     "token": "[JWT token]",
-    "success": True
+    "success": true
 }
 ```
 
@@ -47,6 +47,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```

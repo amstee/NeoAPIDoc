@@ -3,7 +3,7 @@
 
 **URL** : `/conversation/promote`
 
-**Method** : `POST`
+**Method** : `PUT`
 
 **Authentication required** : YES (JWT token)
 
@@ -30,7 +30,7 @@ Informations to provide :
 
 ```json
 {
-    "success": True
+    "success": true
 }
 ```
 
@@ -45,7 +45,7 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```
 
@@ -60,6 +60,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```

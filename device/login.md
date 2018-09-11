@@ -16,8 +16,8 @@ Informations to provide :
 
 ```json
 {
-    "username": "[string]",
-    "password": "[string]"
+    "device_username": "[string]",
+    "device_password": "[string]"
 }
 ```
 

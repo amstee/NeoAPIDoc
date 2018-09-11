@@ -3,8 +3,6 @@
 
 **URL** : `/media/find`
 
-**URL DEVICE** : `/device/media/find`
-
 **Method** : `POST`
 
 **Authentication required** : YES (JWT token)
@@ -21,6 +19,7 @@ Informations to provide :
 
 ```json
 {
+  "token | device_token": "[string]",
   "purpose": "[string]",
   "circle_id | device_id | user_id": "[integer] (optional)"
 }

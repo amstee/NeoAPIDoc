@@ -1,21 +1,20 @@
 # List conversation
 **[HOME](../README.md)**
 
-**URL** : `/conversation/list`
+**URL** : `/conversation/list/<circle_id>`
 
-**Method** : `POST`
+**Method** : `GET`
 
 **Authentication required** : YES (JWT token)
 
-**Permissions required** : User
+**Permissions required** : User | Device & Being member of the circle
 
 
-Informations to provide :
+Informations to provide in header :
 
 ```json
 {
-    "token": "[JWT token]",
-    "circle_id": "[integer]"
+    "Authorization": "[string]"
 }
 ```
 
@@ -39,7 +38,7 @@ Informations to provide :
             "device_access": "[boolean]"
         }
     ],
-    "success": True
+    "success": true
 }
 ```
 
@@ -54,7 +53,7 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```
 
@@ -69,6 +68,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```

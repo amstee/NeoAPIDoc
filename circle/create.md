@@ -34,9 +34,9 @@ Informations to provide :
                 "name": "[string(120)]",
                 "created": "[datetime]",
                 "updated": "[datetime]",
-                "device": "[integer]",
+                "device": "[integer]"
                },
-    "success": True
+    "success": true
 }
 ```
 
@@ -51,6 +51,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```

@@ -3,8 +3,6 @@
 
 **URL** : `/media/create`
 
-**URL DEVICE** : `/device/media/create`
-
 **Method** : `POST`
 
 **Authentication required** : YES (JWT token)
@@ -24,6 +22,7 @@ Informations to provide :
 
 ```json
 {
+  "token | device_token": "[string]",
   "medias": [
     {
        "purpose": "[string] Ex: profile_picture",

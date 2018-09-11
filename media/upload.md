@@ -3,8 +3,6 @@
 
 **URL** : `/media/upload/<media_id>`
 
-**URL DEVICE** : `/device/media/upload/<media_id>`
-
 **Method** : `POST`
 
 **Authentication required** : YES (JWT token)

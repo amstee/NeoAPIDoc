@@ -3,9 +3,7 @@
 
 **URL** : `/admin/media/update`
 
-**URL DEVICE** : `/media/media/update`
-
-**Method** : `POST`
+**Method** : `PUT`
 
 **Authentication required** : YES (JWT token)
 
@@ -18,6 +16,7 @@ Informations to provide :
 
 ```json
 {
+  "token | device_token": "[string]",
   "media_id": "[integer]",
   "filename": "[string] (optional)",
   "extension": "[string] (optional)",

@@ -5,18 +5,18 @@ Device update.
 
 **URL** : `/device/update`
 
-**Method** : `POST`
+**Method** : `PUT`
 
-**Authentication required** : NO
+**Authentication required** : YES
 
-**Permissions required** : None
+**Permissions required** : Circle admin user OR Device
 
 
 Informations to provide :
 
 ```json
 {
-    "device_token OR token": "[string]",
+    "device_token | token": "[string]",
     "device_id": "[int]"
 }
 ```

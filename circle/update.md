@@ -3,18 +3,18 @@
 
 **URL** : `/circle/update`
 
-**Method** : `POST`
+**Method** : `PUT`
 
 **Authentication required** : YES (JWT token)
 
-**Permissions required** : User
+**Permissions required** : User | Device
 
 
 Informations to provide :
 
 ```json
 {
-    "token": "[JWT token]",
+    "device_token | token": "[JWT token]",
     "circle_id": "[integer]",
     "name": "[string(120)]"
 }
@@ -30,7 +30,7 @@ Informations to provide :
 
 ```json
 {
-    "success": True
+    "success": true
 }
 ```
 
@@ -45,7 +45,7 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```
 
@@ -60,7 +60,7 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```
 
@@ -76,6 +76,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```

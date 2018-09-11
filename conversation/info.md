@@ -1,21 +1,20 @@
 # Conversation informations
 **[HOME](../README.md)**
 
-**URL** : `/conversation/info`
+**URL** : `/conversation/info/<conversation_id>`
 
-**Method** : `POST`
+**Method** : `GET`
 
 **Authentication required** : YES (JWT token)
 
-**Permissions required** : User
+**Permissions required** : User | Device & Being member of the conversation
 
 
-Informations to provide :
+Informations to provide in header :
 
 ```json
 {
-    "token": "[JWT token]",
-    "conversation_id": "[integer]"
+    "Authorization": "[string]"
 }
 ```
 
@@ -106,6 +105,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```

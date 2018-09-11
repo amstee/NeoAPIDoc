@@ -1,9 +1,7 @@
 # Media list
 **[HOME](../README.md)**
 
-**URL** : `/media/list`
-
-**URL DEVICE** : `/device/media/list`
+**URL** : `/message/media/list/<message_id>`
 
 **Method** : `POST`
 
@@ -14,11 +12,11 @@
 **Description :**
 List all medias for a given message
 
-Informations to provide :
+Informations to provide in header :
 
 ```json
 {
-  "message_id": "[integer]"
+    "Authorization": "[string]"
 }
 ```
 

@@ -5,19 +5,29 @@ Device info.
 
 **URL** : `/device/info/<device_id>`
 
-**Method** : `GET`
+**URL POST** : `/device/info`
 
-**Authentication required** : NO
+**Method** : `GET` OR `POST`
 
-**Permissions required** : None
+**Authentication required** : YES
+
+**Permissions required** : USER or DEVICE
 
 
-Informations to provide :
+Informations to provide for GET :
 
 HEADER --> Authorization
 ```json
 {
-    "device_token": "[string]"
+    "device_token | token": "[string]"
+}
+```
+
+```json
+{
+    "token": "[JWT token]",
+    "(Only for users) device_id": "[int]",
+    "success": true
 }
 ```
 
@@ -31,7 +41,19 @@ HEADER --> Authorization
 
 ```json
 {
-    "success": true
+    "success": true,
+    "content": {
+        "id": "[integer]",
+        "name": "[string]",
+        "created": "[date]",
+        "updated": "[date]",
+        "activated": "[boolean]",
+        "username": "[string]",
+        "circle": "[list]",
+        "messages": "[list]",
+        "medias": "[list]",
+        "is_online": "boolean"
+    }
 }
 ```
 

@@ -3,20 +3,20 @@
 
 Retrieving account informations.
 
-**URL** : `/account/info`
+**URL** : `/user/info/<user_id>`
 
-**Method** : `POST`
+**Method** : `GET`
 
 **Authentication required** : YES (token)
 
-**Permissions required** : User
+**Permissions required** : User | Device
 
 
-Informations to provide :
+Informations to provide in header :
 
 ```json
 {
-    "token": "[JWT token]"
+    "Authorization": "[string]"
 }
 ```
 
@@ -94,7 +94,7 @@ Informations to provide :
                     "created": "[string(datetime)]",
                     "updated": "[string(datetime)]",
                     "isOnline": "[boolean]",
-                    "type": "[string(10)]",
+                    "type": "[string(10)]"
                 },
                 "media": {
                     "id": "[integer]",
@@ -126,6 +126,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```

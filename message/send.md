@@ -17,7 +17,7 @@ Informations to provide :
     "token": "[JWT token]",
     "conversation_id": "[integer]",
     "text_message": "[string(8192)]",
-    *"files": "[undefined]"
+    "files": "[list]"
 }
 ```
 

@@ -1,21 +1,19 @@
 # Message informations
 **[HOME](../README.md)**
 
-**URL** : `/message/info`
+**URL** : `/message/info/<message_id>`
 
 **Method** : `POST`
 
 **Authentication required** : YES (JWT token)
 
-**Permissions required** : User
+**Permissions required** : User | Device & Have access to the message
 
-
-Informations to provide :
+Informations to provide in header :
 
 ```json
 {
-    "token": "[JWT token]",
-    "message_id": "[integer]"
+    "Authorization": "[string]"
 }
 ```
 
@@ -65,7 +63,7 @@ Informations to provide :
             }
         ]
     },
-    "success": True
+    "success": true
 }
 ```
 
@@ -80,6 +78,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```

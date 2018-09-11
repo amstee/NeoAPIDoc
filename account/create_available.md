@@ -3,9 +3,9 @@
 
 Checking email availability.
 
-**URL** : `/account/create/available`
+**URL** : `/email/available/<email>`
 
-**Method** : `POST`
+**Method** : `GET`
 
 **Authentication required** : NO
 
@@ -31,7 +31,7 @@ Informations to provide :
 
 ```json
 {
-    "success": True
+    "success": true
 }
 ```
 
@@ -45,7 +45,7 @@ Informations to provide :
 
 ```json
 {
-    "success": False
+    "success": false
 }
 ```
 
@@ -60,6 +60,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```

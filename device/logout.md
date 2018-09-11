@@ -7,9 +7,9 @@ Device logout.
 
 **Method** : `POST`
 
-**Authentication required** : NO
+**Authentication required** : YES
 
-**Permissions required** : None
+**Permissions required** : Device
 
 
 Informations to provide :

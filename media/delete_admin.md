@@ -3,7 +3,7 @@
 
 **URL** : `/admin/media/delete`
 
-**Method** : `POST`
+**Method** : `DELETE`
 
 **Authentication required** : YES (JWT token)
 
@@ -17,6 +17,7 @@ Informations to provide :
 
 ```json
 {
+  "token": "[string]",
   "media_id": "[integer]"
 }
 ```

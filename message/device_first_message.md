@@ -14,10 +14,10 @@ Informations to provide :
 
 ```json
 {
-    "token": "[JWT token]",
+    "device_token": "[string]",
     "email": "[string(120)]",
     "text_message": "[string(8192)]",
-    *"files": "[undefined]"
+    "files": "[list]"
 }
 ```
 
@@ -41,7 +41,7 @@ Informations to provide :
                         "identifier": "[string(10)]",
                         "uploaded": "[boolean]"
                     }],
-    "success": True
+    "success": true
 }
 ```
 
@@ -56,6 +56,6 @@ Informations to provide :
 ```json
 {
     "message": "[Error message]",
-    "success": False
+    "success": false
 }
 ```
