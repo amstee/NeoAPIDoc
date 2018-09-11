@@ -25,8 +25,8 @@ Resources for viewing, manipulating and creating accounts.
 Resources for viewing, manipulating devices.
 
 * [Update device](device/update.md) : `POST /device/update`
-* [Log in device](device/device_info.md) : `POST /device/authenticate`
-* [Log out device](device/login.md) : `POST /device/logout`
+* [Log in device](device/login.md) : `POST /device/authenticate`
+* [Log out device](device/logout.md) : `POST /device/logout`
 * [Device informations](device/logout.md) : `POST /device/info/<device_id>`
 * [Check username availability](device/available.md) : `GET /device/username/available/<username>`
 * [Modify device password](device/modify_password.md) : `PUT /device/modify/password`
