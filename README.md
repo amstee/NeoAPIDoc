@@ -13,12 +13,12 @@ Resources for viewing, manipulating and creating accounts.
 * [Create account](account/create.md) : `POST /account/create`
 * [Log in account](account/login.md) : `POST /account/login`
 * [Log out account](account/logout.md) : `POST /account/logout`
-* [Account informations](account/info.md) : `POST /account/info`
+* [Account informations](account/info.md) : `POST /user/info`
 * [Modify account informations](account/modify.md) : `PUT /account/modify`
 * [Check email availability](account/create_available.md) : `GET /email/available/<email>`
 * [Modify account password](account/modify_password.md) : `PUT /account/modify/password`
 * [Verify account token validity](account/token.md) : `POST /token/verify`
-* [Account information](account/device_info.md) : `GET /account/info/<user_id>`
+* [Account information](account/device_info.md) : `GET /user/info/<user_id>`
 
 ### Device
 
