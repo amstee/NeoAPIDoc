@@ -107,5 +107,5 @@ Description | Channel | JSON
 Turn servers config | webrtc_config | `TURN = [{"domain": "webrtc.neo.ovh", "ip": "", "port": 3478}]`
 Stun servers config | webrtc_config | `STUN = [{"domain":"webrtc.neo.ovh","ip": "", "port": 3478,}]`
 Credentials for user connection to turn servers | webrtc_config | `{"username": username, "password": password}`
-Message sent from another user | webrtc_config | `{ "sender_id": socket.client.id, "is_device": socket.client.is_device, "content": json}`
+Message sent from another user | webrtc_forward | `{ "sender_id": socket.client.id, "is_device": socket.client.is_device, "content": json}`
 
